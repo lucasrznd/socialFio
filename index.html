@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socialFio - A Rede Social da Faculdade</title>
+    
+    <!-- Estilo CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- Importar icones -->
+    <script src="https://kit.fontawesome.com/e32d51f396.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav> <!-- Inicio barra de navegação -->
+        
+        <div class="nav-esquerda"> <!-- Inicio navegação esquerda -->
+            <img src="/img/logo.png" class="logo">
+            <ul>
+                <li><img src="/img/notification.png"></li>
+                <li><img src="/img/inbox.png"></li>
+                <li><img src="/img/video.png"></li>
+
+            </ul>
+        </div> <!-- Fim navegação esquerda -->
+
+        <div class="nav-direita"> <!-- Inicio navegação direita -->
+            
+            <div class="barra-pesquisa"> <!-- Inicio barra de Pesquisa -->
+                <img src="/img/search.png">
+                <input type="text" placeholder="Pesquisar">
+            </div> <!-- Fim barra de Pesquisa -->
+
+            <div class="nav-icone-usuario online" onclick="settingsMenuToggle()"> <!-- Inicio Icone Perfil do usuario -->
+                <img src="img/profile-pic.png">
+            </div> <!-- Fim Icone Perfil do usuario -->
+
+        </div> <!-- Fim navegação direita -->
+
+
+        <!-- Inicio - Abrir configurações no menu -->
+        <div class="config-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="config-menu-interno">
+
+                <div class="perfil-usuario">
+                    <img src="/img/profile-pic.png">
+                    <div>
+                        <p>Lucas Rezende</p>
+                        <a href="#">Visualizar perfil</a>
+                    </div>
+                </div>
+
+                <hr>
+    
+                    <div class="perfil-usuario">
+                        <img src="/img/feedback.png">
+                        <div>
+                            <p>Me dê o seu feedback</p>
+                            <a href="#">Ajude-me a melhorar o site</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="config-links">
+                        <img src="/img/setting.png" class="config-icone">
+                        <a href="#">Configurações e privacidade <img src="/img/arrow.png" width="10px"></a>
+                    </div>
+
+                    <div class="config-links">
+                        <img src="/img/help.png" class="config-icone">
+                        <a href="#">Ajuda e suporte <img src="/img/arrow.png" width="10px"></a>
+                    </div>
+
+                    <div class="config-links">
+                        <img src="/img/display.png" class="config-icone">
+                        <a href="#">Exibição e acessibilidade <img src="/img/arrow.png" width="10px"></a>
+                    </div>
+
+                    <div class="config-links">
+                        <img src="/img/logout.png" class="config-icone">
+                        <a href="#">Desconectar <img src="/img/arrow.png" width="10px"></a>
+                    </div>
+
+            </div>           
+
+
+        </div> <!-- Fim - Abrir configurações no menu -->
+    
+    </nav> <!-- Fim barra de navegação -->
+
+    <div class="container"> <!-- Inicio container -->
+
+        <div class="barra-lateral-esquerda"> <!-- Inicio Barra lateral esquerda -->
+            
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png"> Últimas notícias</a>
+                <a href="#"><img src="img/friends.png"> Amigos</a>
+                <a href="#"><img src="img/group.png"> Grupos</a>
+                <a href="#"><img src="img/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="img/watch.png"> Assistir</a>
+                <a href="#">Ver mais</a>
+            </div>
+
+            <div class="links-materias">
+                <p>Suas matérias</p>
+                <a href="#"><img src="/img/materia-1.png" alt="">Projeto e arqt. de Software</a>
+                <a href="#"><img src="/img/materia-2.png" alt="">Projeto Integrador III</a>
+                <a href="#"><img src="/img/materia-3.png" alt="">Programação Orientada a Objetos</a>
+                <a href="#"><img src="/img/materia-4.png" alt="">Design e desenv. de Banco de Dados</a>
+            </div>
+
+
+        </div> <!-- Fim Barra lateral esquerda -->
+        
+        <div class="conteudo-principal"> <!-- Inicio conteudo principal -->
+
+            <!---------------- Inicio Stories-------------------->
+
+            <div class="galeria-story">
+                <div class="story story0">
+                    <img src="/img/upload.png">
+                    <p>Postar Story</p>
+                </div>
+
+                <div class="story story1">
+                    <img src="/img/membro-1.jpg">
+                    <p>Rógerio</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="/img/membro-2.jpg">
+                    <p>André</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="/img/membro-3.jpg">
+                    <p>Guilherme</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="/img/membro-4.jpg">
+                    <p>Sérgio</p>
+                </div>
+            </div>
+
+            <!---------------- Fim Stories-------------------->
+
+            <div class="container-escreverpost"> <!-- Inicio Escrever Post Container -->
+                <div class="perfil-usuario">
+                    <img src="/img/profile-pic.png">
+                    <div>
+                        <p>Lucas Rezende</p>
+                        <small>Público <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3"placeholder="O que você tem feito na facul?" ></textarea>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="/img/live-video.png">Video ao Vivo</a>
+                        <a href="#"><img src="/img/photo.png">Fotos/Videos</a>
+                        <a href="#"><img src="/img/feeling.png">Sentimento/Atividade</a>
+                    </div>
+
+                </div>
+
+            </div> <!-- Fim Escrever Post Container -->
+
+            <div class="post-container"> <!-- Inicio Post Container 1 -->
+
+                <div class="rolar-post">
+                    <div class="perfil-usuario">
+                        <img src="/img/profile-pic.png">
+                        <div>
+                            <p>Lucas Rezende</p>
+                            <span>09 de Março de 2023, 17:50</span>
+                        </div>
+                    </div>
+
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="texto-post" >Aulinha do André hoje tá punk, negócio ta doido, programação orientada a objetos. <a href="#">#POO</a> <a href="#">#Programação</a> </p>
+                <img src="/img/feed-image-1.png" class="img-post">
+
+                <div class="rolar-post">
+                    <div class="icones-atividade">
+                        <div><img src="/img/like-blue.png"> 120</div>
+                        <div><img src="/img/comments.png"> 45</div>
+                        <div><img src="/img/share.png"> 20</div>
+                    </div>
+
+                    <div class="icone-perfil-atividade">
+                    <img src="/img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+
+            </div> <!-- Fim Post Container 1 -->
+
+            <div class="post-container"> <!-- Inicio Post Container 2 -->
+
+                <div class="rolar-post">
+                    <div class="perfil-usuario">
+                        <img src="/img/profile-pic.png">
+                        <div>
+                            <p>Gustavo Rodrigues</p>
+                            <span>09 de Março de 2023, 20:50</span>
+                        </div>
+                    </div>
+
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="texto-post">Aulinha de matematica hoje tá como, so o pó. <a href="#">#Graficofuncao</a> </p>
+                <img src="/img/feed-image-2.png" class="img-post">
+
+                <div class="rolar-post">
+                    <div class="icones-atividade">
+                        <div><img src="/img/like-blue.png"> 200</div>
+                        <div><img src="/img/comments.png"> 5</div>
+                        <div><img src="/img/share.png"> 3</div>
+                    </div>
+
+                    <div class="icone-perfil-atividade">
+                    <img src="/img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+
+            </div> <!-- Fim Post Container 2 -->
+
+            <div class="post-container"> <!-- Inicio Post Container 3 -->
+
+                <div class="rolar-post">
+                    <div class="perfil-usuario">
+                        <img src="/img/profile-pic.png">
+                        <div>
+                            <p>Lucas Robles</p>
+                            <span>08 de Março de 2023, 15:21</span>
+                        </div>
+                    </div>
+
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="texto-post">Começando os resultados em design, curso top demais!!</p>
+                <img src="/img/feed-image-3.png" class="img-post">
+
+                <div class="rolar-post">
+                    <div class="icones-atividade">
+                        <div><img src="/img/like.png"> 130</div>
+                        <div><img src="/img/comments.png"> 2</div>
+                        <div><img src="/img/share.png"> 1</div>
+                    </div>
+
+                    <div class="icone-perfil-atividade">
+                    <img src="/img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div> <!-- Fim Post Container 3 -->
+
+            <button type="button" class="carregar-mais-bt">Carregar mais</button>
+
+
+        </div> <!-- Fim conteudo principal -->
+        
+        <div class="barra-lateral-direita"> <!-- Inicio Barra lateral direita -->
+
+            <div class="titulo-barra-lateral">
+                <h4>Eventos</h4>
+                <a href="#">Ver tudo</a>
+            </div>
+
+            <div class="eventos"> <!-- Inicio Evento 1 -->
+                <div class="evento-esquerda">
+                    <h3>14</h3>
+                    <span>Março</span>
+                </div>
+                <div class="evento-direita">
+                    <h4>Festa na Selva</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Aeroporto, Ourinhos</p>
+                    <a href="#">Mais informações</a>
+                </div>
+            </div> <!-- Fim Evento 1 -->
+
+            <div class="eventos"> <!-- Inicio Evento 2 -->
+                <div class="evento-esquerda">
+                    <h3>26</h3>
+                    <span>Março</span>
+                </div>
+                <div class="evento-direita">
+                    <h4>ARRAIALCOOL</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Aeroporto, Ourinhos</p>
+                    <a href="#">Mais informações</a>
+                </div>
+            </div> <!-- Fim Evento 2 -->
+
+            <div class="titulo-barra-lateral"> <!-- Inicio Anuncio -->
+                <h4>Anúncios</h4>
+                <a href="#">Fechar</a>
+            </div>
+            <img src="img/anuncio-1.png" class="ads-barra-lateral">  <!-- Fim Anuncio -->
+
+            <div class="titulo-barra-lateral"> 
+                <h4>Conversas</h4>
+                <a href="#">Fechat Chat</a>
+            </div>
+
+            <div class="lista-online">
+                <div class="online">
+                    <img src="img/membro-1.jpg">
+                </div>
+                <p>Rógerio Marinke</p>
+            </div>
+
+            <div class="lista-online">
+                <div class="online">
+                    <img src="img/membro-2.jpg">
+                </div>
+                <p>André Luís</p>
+            </div>
+
+            <div class="lista-online">
+                <div class="online">
+                    <img src="img/membro-3.jpg">
+                </div>
+                <p>Guilherme Orlandini</p>
+            </div>
+
+            <div class="lista-online">
+                <div class="online">
+                    <img src="img/membro-4.jpg">
+                </div>
+                <p>Sérgio Delfino</p>
+            </div>
+
+        </div> <!-- Fim Barra lateral direita -->
+    
+    </div> <!-- Fim Container -->
+
+    <div class="rodape">
+        <p>&copy 2023 - Lucas Rezende</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
